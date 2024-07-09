@@ -1,0 +1,15 @@
+{
+    "rewrites": [
+      {
+        "source": "/:path((?!.*\\..*).*)",
+        "has": [
+          {
+            "type": "filesystem",
+            "value": "/:path.html"
+          }
+        ],
+        "destination": "/:path.html"
+      }
+    ]
+  }
+  
